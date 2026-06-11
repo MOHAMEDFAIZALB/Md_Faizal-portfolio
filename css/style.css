@@ -1302,6 +1302,33 @@ section:nth-child(odd) .animate.scroll{
     }
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .portfolio-box {
+        height: 18rem !important;
+    }
+    .portfolio-layer {
+        padding: 1.2rem !important;
+    }
+    .portfolio-layer h4 {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .portfolio-layer p {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem !important;
+        line-height: 1.3 !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .portfolio-layer a {
+        width: 3.2rem !important;
+        height: 3.2rem !important;
+    }
+    .portfolio-layer a i {
+        font-size: 1.6rem !important;
     }
     .skills-grid {
         grid-template-columns: repeat(4, 1fr);
