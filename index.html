@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        alert("JS Error: " + message + " on line " + lineno + " in " + source);
+        return false;
+      };
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TN7KK1K7SL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TN7KK1K7SL');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="NjhHLLyhoWJ5J-T6J-2BtGHxjlUmqf3SUOm6FRPrBcw" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="description" content="Mohamed Faizal B's professional portfolio. B.Tech graduate in AI & Data Science from Akshaya College of Engineering and Technology, specializing in Digital Marketing and Web Development.">
+    <meta name="keywords" content="Mohamed Faizal B, Mohamed Faizal B portfolio, Web Developer, Digital Marketer, Artificial Intelligence, Data Science, Akshaya College Coimbatore, React developer, Python developer, SEO specialist, Palani, Coimbatore, India">
+    <meta name="author" content="Mohamed Faizal B">
+
+    <!-- Open Graph tags for Social sharing -->
+    <meta property="og:title" content="Mohamed Faizal B | Portfolio - Web Developer & Digital Marketer">
+    <meta property="og:description" content="Explore the projects, skills, and certifications of Mohamed Faizal B, an AI & Data Science graduate specializing in Web Development & Digital Marketing.">
+    <meta property="og:image" content="images/md_faizal.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" type="x-icon" href="images/logo-mdfaizal (1).png">
+    <title>Mohamed Faizal B | Portfolio - Web Developer & Digital Marketer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: '#2563eb',
+              'main-hover': '#3b82f6',
+              bg: '#0b0f19',
+              'second-bg': '#131b2e',
+              'card-bg': '#1e293b',
+              border: '#334155',
+              muted: '#94a3b8'
+            }
+          }
+        }
+      }
+    </script>
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <!-- < alt="Loading..." /> -->
+    </div>
+    <audio loop="" id="audioPlayer" style="display:none"><source src="sound.mp3" type="audio/mp3"></audio>
+    <noscript>Allow Javascript</noscript>
+    <header class="header">
+        <a href="#" class="logo"><img src="images/logo-main.png" alt="Nav bar logo"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#certification">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <section class="home show-animate" id="home">
+        <div class="home-content" data-aos="fade-right">
+            <h1>Hi, I'm <br><span class="gradient-animation">Mohamed Faizal B</span></h1>
+            <div class="text-animate">
+                <h3>I'm a <span class="typing-text"></span></h3>
+            </div>
+            <p>
+                AI and Data Science graduate from Akshaya College of Engineering and Technology with a strong interest in Digital Marketing and Web Development. Passionate about creating impactful digital experiences, building scalable web applications, and contributing to business growth through technology and innovation. Dedicated to continuous learning and professional development.
+            </p>
+            
+            <div class="btn-box">
+                <a href="mailto:mohfaizal422@gmail.com" class="btn"><i class='bx bx-paper-plane'></i> Hire Me</a>
+                <a href="https://drive.google.com/file/d/19aNszoXjJjbsfM6ZsEgIDBwY-Zkk7Pyx/view?usp=drivesdk" target="_blank" class="btn"><i class='bx bx-file-blank'></i> View CV</a>
+                <input type="checkbox" id="checkboxInput">
+                <label for="checkboxInput" class="toggleSwitch" onclick="playpause()">
+                    <div class="speaker">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                            <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                            <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                        </svg>
+                    </div>
+                    <div class="mute-speaker">
+                        <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                            <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                            <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+
+            <div class="home-sci">
+                <a href="https://github.com/MOHAMEDFAIZALB" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-faizal-b-a8194525b" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:mohfaizal422@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
+        </div>
+
+        <div class="home-img-container" data-aos="fade-left">
+            <div class="home-profile-card">
+                <img src="images/md_faizal.jpg" alt="Mohamed Faizal B" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about" data-aos="fade-up">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="images/md_faizal.jpg" alt="Mohamed Faizal B">
+                <span class="circle-spin"></span>
+            </div>
+            <div class="about-content">
+                <h3>Web Developer & Digital Marketer</h3>
+                <p>
+                    I am a B.Tech graduate in Artificial Intelligence and Data Science from Akshaya College of Engineering and Technology, Coimbatore. I have completed multiple internships and worked on projects related to Artificial Intelligence, Web Development, and Digital Solutions. I am passionate about Digital Marketing, Web Development, content creation, and e-commerce. I enjoy learning new technologies, exploring nature, traveling, and creating pencil sketches.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section class="education" id="education" data-aos="fade-up">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="education-container">
+            <!-- College -->
+            <div class="education-card college-card">
+                <div class="education-icon">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <div class="education-details">
+                    <span class="year-tag">2022 - 2026</span>
+                    <h3>Bachelor of Technology (B.Tech)</h3>
+                    <h4>Artificial Intelligence and Data Science</h4>
+                    <p class="college-name">Akshaya College of Engineering and Technology, Coimbatore</p>
+                    <div class="badges-row">
+                        <div class="gpa-badge">CGPA: 7.66</div>
+                        <div class="arrear-badge"><i class='bx bx-badge-check'></i> No History of Arrears</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12th Grade -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-details">
+                    <span class="year-tag">2021 - 2022</span>
+                    <h3>Higher Secondary Education (12th Grade)</h3>
+                    <h4>State Board</h4>
+                    <p class="college-name">BVB Mat.Hr.Sec. School, Palani</p>
+                </div>
+            </div>
+
+            <!-- 10th Grade -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-details">
+                    <span class="year-tag">2019 - 2020</span>
+                    <h3>Secondary School Leaving Certificate (10th Grade)</h3>
+                    <h4>State Board</h4>
+                    <p class="college-name">BVB Mat.Hr.Sec. School, Palani</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills" data-aos="fade-up">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class='bx bx-trending-up skill-icon'></i>
+                <h3>Digital Marketing</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bx-code-alt skill-icon'></i>
+                <h3>Web Development</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-html5 skill-icon'></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-css3 skill-icon'></i>
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-javascript skill-icon'></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-react skill-icon'></i>
+                <h3>React.js</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-nodejs skill-icon'></i>
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-firebase skill-icon'></i>
+                <h3>Firebase</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-mongodb skill-icon'></i>
+                <h3>MongoDB</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-python skill-icon'></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-git skill-icon'></i>
+                <h3>Git & GitHub</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bx-spreadsheet skill-icon'></i>
+                <h3>Microsoft Excel</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxs-palette skill-icon'></i>
+                <h3>Canva</h3>
+            </div>
+            <div class="skill-card">
+                <i class='bx bx-code-block skill-icon'></i>
+                <h3>VS Code</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="portfolio" id="portfolio" data-aos="fade-up">
+        <h2 class="heading">Featured <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <!-- Project: E-Commerce -->
+            <div class="portfolio-box">
+                <img src="images/reshma_fashion_hub.png" alt="Reshma Fashion Hub - E-Commerce">
+                <div class="portfolio-layer">
+                    <h4>Reshma Fashion Hub</h4>
+                    <p>An e-commerce platform showcasing modern fashion trends, built for seamless online shopping and customer engagement.</p>
+                    <a href="https://reshma-fashion-hub.web.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="portfolio-box">
+                <img src="images/skill_demand_insights.png" alt="Skill Demand Insights">
+                <div class="portfolio-layer">
+                    <h4>Skill Demand Insights</h4>
+                    <p>Job Market Analytics Project: Analyzed job postings to identify in-demand skills, technology trends, and location-based opportunities.</p>
+                    <a href="https://github.com/MOHAMEDFAIZALB" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>  
+
+            <!-- Project 2 -->
+            <div class="portfolio-box">
+                <img src="images/skillnet.png" alt="SkillNet">
+                <div class="portfolio-layer">
+                    <h4>SkillNet</h4>
+                    <p>A networking platform that connects people with similar skills and allows users to showcase their skills, experiences, and achievements.</p>
+                    <a href="https://github.com/MOHAMEDFAIZALB" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio-box">
+                <img src="images/realtime_attendance.png" alt="Real-Time Attendance System">
+                <div class="portfolio-layer">
+                    <h4>Real-Time Attendance System</h4>
+                    <p>Developed an automated attendance tracking system to improve attendance management using OpenCV and Face Detection.</p>
+                    <a href="https://github.com/MOHAMEDFAIZALB/Face-Detection.git" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="portfolio-box">
+                <img src="images/heart_disease_prediction.png" alt="Heart Disease Prediction">
+                <div class="portfolio-layer">
+                    <h4>Heart Disease Prediction</h4>
+                    <p>Built a machine learning model to predict heart disease risk using healthcare datasets and Python-based ML algorithms.</p>
+                    <a href="https://github.com/MOHAMEDFAIZALB/heart-disease-prediction.git" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="portfolio-box">
+                <img src="images/safetify.png" alt="Safetify">
+                <div class="portfolio-layer">
+                    <h4>Safetify – AI for Women Safety</h4>
+                    <p>Developed an AI-powered women safety solution focused on enhancing personal safety through intelligent technology.</p>
+                    <a href="https://github.com/MOHAMEDFAIZALB" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements section -->
+    <section class="achievements" id="achievements" data-aos="fade-up">
+        <h2 class="heading">My <span>Achievements</span></h2>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <div class="achievement-icon"><i class='bx bxs-award'></i></div>
+                <h3>Best Contribution to Society Award (2024)</h3>
+                <p>Recognized for Safetify – AI for Women Safety at the Tech Day Contest for its social impact, innovation, and contribution to society.</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon"><i class='bx bxs-trophy'></i></div>
+                <h3>MechFugo 2K23 – P.A. College, Pollachi</h3>
+                <p>Won 3rd Prize, demonstrating technical expertise, creativity, and problem-solving skills in a competitive environment.</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon"><i class='bx bxs-medal'></i></div>
+                <h3>Udhayam24 – KIT Coimbatore</h3>
+                <p>Achieved 2nd Prize in Debugging and Technical Quiz, showcasing technical proficiency, logical reasoning, teamwork, and performance under pressure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification section -->
+    <section class="certification" id="certification" data-aos="fade-up">
+        <h2 class="heading">Certifications & <span>Internships</span></h2>
+        
+        <h3 class="sub-heading">Internships</h3>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/nexus-intern(1).jpeg" alt="Nexus Info Internship">
+                <div class="portfolio-layer">
+                    <h4>Nexus Info</h4>
+                    <span class="year-label">Aug 2024 - Sep 2024</span>
+                    <p>Completed a one-month internship in Web Development at Nexus Info, contributing to a client demo project.</p>
+                </div>
+            </div>  
+            <div class="portfolio-box">
+                <img src="images/bharat-intern.jpg" alt="Bharat Intern Internship">
+                <div class="portfolio-layer">
+                    <h4>Bharat Intern</h4>
+                    <span class="year-label">Jul 2024 - Aug 2024</span>
+                    <p>Successfully completed a virtual internship in Full Stack Development, gaining practical web dev experience.</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/codsoft-python-intern_page-0001.jpg" alt="Codsoft Internship">
+                <div class="portfolio-layer">
+                    <h4>Codsoft</h4>
+                    <span class="year-label">Feb 2024 - Mar 2024</span>
+                    <p>Completed a python programming internship, gaining hands-on experience and applying knowledge to real-world projects.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="sub-heading">Workshops & Courses</h3>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/Cloud Computing _ Mohamed Faizal_page-0001.jpg" alt="Cloud Computing Workshop">
+                <div class="portfolio-layer">
+                    <h4>Cloud Computing</h4>
+                    <span class="year-label">06 Mar 2024</span>
+                    <p>Completed a Cloud Computing workshop at IIT Madras, enhancing my knowledge of cloud technologies.</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/GCT_ML Workshop (1)_page-0001.jpg" alt="Machine Learning Workshop">
+                <div class="portfolio-layer">
+                    <h4>Machine Learning</h4>
+                    <span class="year-label">20 Feb 2024</span>
+                    <p>Attended a workshop on "Introduction to ML with Python" covering ML concepts and implementation at GCT.</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/CIT_page-0001.jpg" alt="Data Analytics Workshop">
+                <div class="portfolio-layer">
+                    <h4>Data Analytics</h4>
+                    <span class="year-label">09 Mar 2024</span>
+                    <p>Participated in the "Data Analytics - ORANGE" workshop at Coimbatore Institute of Technology.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="sub-heading">Courses</h3>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/HTML-CSS-certificate_page-0001.jpg" alt="HTML & CSS Certificate">
+                <div class="portfolio-layer">
+                    <h4>HTML & CSS</h4>
+                    <span class="year-label">25 Sep - 29 Sep 2023</span>
+                    <p>Completed a short course on HTML and CSS, gaining foundational skills in web design and development.</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/Python Advance Course Certificate_page-0001.jpg" alt="Python Advanced Course">
+                <div class="portfolio-layer">
+                    <h4>Python Advanced Course</h4>
+                    <span class="year-label">Sep - Dec 2023</span>
+                    <p>Completed an advanced Python course, developing skills in complex programming techniques and project applications.</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/Novi-Tech_page-0001.jpg" alt="AI Course">
+                <div class="portfolio-layer">
+                    <h4>Artificial Intelligence</h4>
+                    <span class="year-label">Oct - Nov 2023</span>
+                    <p>Completed a course on Artificial Intelligence, exploring machine learning models, neural networks, and their real-world applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact section -->
+    <section class="contact" id="contact" data-aos="fade-up">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <form action="https://formsubmit.co/mohfaizal422@gmail.com" method="post">
+            <div class="input-box">
+                <div class="input-field">
+                    <input name="full-name" type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input name="email-address" type="email" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input name="number" type="tel" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input name="email-sub" type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn"><i class='bx bx-send'></i> Submit</button>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background">
+            <div class="footer-blob"></div>
+        </div>
+        <div class="footer-foreground">
+            <div class="footer-quote">
+                <div class="quote-wrapper">"<p class="shine">Learn,</p> <p class="shine">lead,</p> <p>let</p> <p class="shine">success</p> <p>follow.</p>"</div>
+            </div>
+            <div class="footer-avatar-container">
+                <img src="images/no eye3png.png" alt="animation-head" class="footer-avatar-img" />
+                <div class="footer-avatar-face">
+                    <div class="footer-avatar-eye footer-left-eye">
+                        <div class="footer-pupil"></div>
+                    </div>
+                    <div class="footer-avatar-eye footer-right-eye">
+                        <div class="footer-pupil"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-text">
+                    <p>Designed and built by Mohamed Faizal B | Copyright &copy; 2026 | All Rights Reserved.</p>
+                    <p>Palani, Dindigul, Tamil Nadu - 624621 | Phone: +91 63825 53066 | Email: mohfaizal422@gmail.com</p>
+                </div>
+                <div class="footer-iconTop">
+                    <a href="#"><img class="rocketIcon" src="./images/rocket.png" alt="BackToTop"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=1.1"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- for aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 800,
+          once: false
+      });
+    </script>
+</body>
+</html>
