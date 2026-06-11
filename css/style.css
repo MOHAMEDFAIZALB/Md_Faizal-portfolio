@@ -1247,6 +1247,12 @@ section:nth-child(odd) .animate.scroll{
         text-align: center;
         padding-top: 15rem;
         gap: 3rem;
+        min-height: 100vh !important;
+    }
+    section {
+        min-height: auto !important;
+        padding-top: 7rem !important;
+        padding-bottom: 5rem !important;
     }
     .home-profile-card {
         width: 24rem;
